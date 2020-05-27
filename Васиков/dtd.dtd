@@ -1,0 +1,123 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Online_Album (Albums,Photos,Locations,Members,Comments,Tags,
+                        Photo_Tags)>
+<!ATTLIST Online_Album
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Albums (album)+>
+<!ATTLIST Albums
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Photos (photo)+>
+<!ATTLIST Photos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Locations (location)+>
+<!ATTLIST Locations
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Members (member)+>
+<!ATTLIST Members
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Comments (comments)+>
+<!ATTLIST Comments
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Tags (tag)+>
+<!ATTLIST Tags
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Photo_Tags (photo_tag)+>
+<!ATTLIST Photo_Tags
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT album (album_id,name,discription,view)>
+<!ATTLIST album
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT photo (photo_id,album_id,location_id,member_id,name,
+                 discription,publication_date,view)>
+<!ATTLIST photo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT location (location_id,name,short_name)>
+<!ATTLIST location
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT member (member_id,name,phone_number,email,address)>
+<!ATTLIST member
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comments (comments_id,photo_id,publication_date,content)>
+<!ATTLIST comments
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT tag (tag_id,name)>
+<!ATTLIST tag
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT photo_tag (tag_id,photo_id)>
+<!ATTLIST photo_tag
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT short_name (#PCDATA)>
+<!ATTLIST short_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT phone_number (#PCDATA)>
+<!ATTLIST phone_number
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comments_id (#PCDATA)>
+<!ATTLIST comments_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT content (#PCDATA)>
+<!ATTLIST content
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT album_id (#PCDATA)>
+<!ATTLIST album_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT discription (#PCDATA)>
+<!ATTLIST discription
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT view (#PCDATA)>
+<!ATTLIST view
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT photo_id (#PCDATA)>
+<!ATTLIST photo_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT location_id (#PCDATA)>
+<!ATTLIST location_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT member_id (#PCDATA)>
+<!ATTLIST member_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT publication_date (#PCDATA)>
+<!ATTLIST publication_date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT tag_id (#PCDATA)>
+<!ATTLIST tag_id
+  xmlns CDATA #FIXED ''>
