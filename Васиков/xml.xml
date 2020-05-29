@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Online_Album [
+<!ELEMENT Online_Album (Album,Photo,Member,Location,Tag,Tag_Photo,Comments)*>
+<!ELEMENT Album (album)*>
+<!ELEMENT album (album_id,name,discription,view)*>
+<!ELEMENT album_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT discription (#PCDATA)>
+<!ELEMENT view (#PCDATA)>
+<!ELEMENT Photo (photo)*>
+<!ELEMENT photo (photo_id, album_id,location_id,member_id,name,discription,publication_date,view)*>
+<!ELEMENT photo_id (#PCDATA)>
+<!ELEMENT album_id (#PCDATA)>
+<!ELEMENT location_id (#PCDATA)>
+<!ELEMENT member_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT discription (#PCDATA)>
+<!ELEMENT publication_date (#PCDATA)>
+<!ELEMENT view (#PCDATA)>
+<!ELEMENT Location (location)*>
+<!ELEMENT location (location_id,name,short_name)*>
+<!ELEMENT location_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT short_name (#PCDATA)>
+<!ELEMENT Member (member)*>
+<!ELEMENT member (member_id,name,phone_number,email,address)*>
+<!ELEMENT member_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT Tag (tag)*>
+<!ELEMENT tag (tag_id,name)*>
+<!ELEMENT tag_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT Photo_Tag (photo_tag)*>
+<!ELEMENT photo_tag (photo_tag_id,tag_id,photo_id)*>
+<!ELEMENT photo_tag_id(#PCDATA)>
+<!ELEMENT tag_id (#PCDATA)>
+<!ELEMENT photo_id (#PCDATA)>
+<!ELEMENT Comments (comments)*>
+<!ELEMENT comments (comments_id, photo_id, publication_date, content)*>
+<!ELEMENT comments_id (#PCDATA)>
+<!ELEMENT photo_id (#PCDATA)>
+<!ELEMENT publication_date (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+]>
+<Online_Album>
+<Albums>
+<album>
+<album_id> alb1 </album_id>
+<name>Природа России</name>
+<discription> Фотографии природы России, которые были запечатлены в разных уголках страны</discription>
+<view>1120</view>
+</album>
+<album>
+ <album_id> alb2</album_id>
+<name>Уральские горы</name>
+<discription> Фотографии Уральских гор</discription>
+<view>506</view>
+</album>
+</Albums>
+<Photos>
+<photo> 
+<photo_id> p_1</photo_id>
+<album_id> alb1</album_id>
+<location_id> loc1</location_id>
+<member_id>001</member_id>
+<name>Водопад Слезы Лауры</name>
+<discription>Водопад Слезы Лауры расположен в районе курорта Вишневка Лазаревского района. С этим водопадом связана одна легенда, которая гласит, что: "По преданию, близ этих берегов потерпело крушение иностранное судно. Спастись удалось лишь одной прелестной девчушке по имени Лаура. Ее приютили адыге и воспитали как дочь. Спустя время, Лаура превратилась в настоящую красавицу. Она встретила и полюбила адыгейского юношу Каймета. По традиции этих мест, они отправилась за благословлением к князю, который, пленившись красотой Лауры, решил убить Каймета. Молодым пришлось бежать, но красавицу поймали. В отчаянии она бросилась со скалы. Каймет, узнав о гибели любимой, последовал за ней. В этот момент горы, ставшие молчаливыми свидетелями, "заплакали" новым водопадом. Путь к водопаду идёт от посёлка Макопсе по долине одноименной реки. Водопад достаточно высокий (16 метров) и производит сильное впечатление. Под ним можно искупаться</discription>
+<publication_date> 22/02/2013</publication_date>
+<view>1120</view>
+</photo>
+<photo>
+<photo_id> p_2</photo_id>
+<album_id> alb2</album_id>
+<location_id> loc2</location_id>
+<member_id>002</member_id>
+<name>Уральские горы</name>
+<discription>Уральские горы — уникальная для России горная система. Это единственная горная цепь, которая пересекает страну с севера на юг и является границей двух частей света.</discription>
+<publication_date> 18/07/2015</publication_date>
+<view>506</view>
+</photo>
+</Photos>
+<Locations>
+<location>
+<location_id>loc1</location_id>
+<name>Российская Федерация</name>
+<short_name>Россия</short_name>
+</location>
+<location>
+<location_id>loc2</location_id>
+<name>Уральские горы</name>
+<short_name>Уральские горы</short_name>
+</location>
+</Locations>
+<Members>
+<member>
+<member_id>001</member_id>
+<name>Александр</name>
+<phone_number>2883274394</phone_number>
+<email>ddasdad@mail.ru</email>
+<address>Москва</address>
+</member>
+<member>
+<member_id>002</member_id>
+<name>Иван</name>
+<phone_number>7483473409</phone_number>
+<email>hamuda_habibi@mail.ru</email>
+<address>Санкт-Петербург</address>
+</member>
+</Members>
+<Comments>
+<comments>
+<comments_id>com1</comments_id>
+<photo_id>p_1</photo_id>
+<publication_date>01.12.2020</publication_date>
+<content>Очень красиво!</content>
+</comments>
+<comments>
+<comments_id>com2</comments_id>
+<photo_id>p_2</photo_id>
+<publication_date>15.07.2020</publication_date>
+<content>Мне нравится!</content>
+</comments>
+</Comments>
+<Tags>
+<tag>
+<tag_id>tag1</tag_id>
+<name>Природа</name>
+</tag>
+<tag>
+<tag_id>tag2</tag_id>
+<name>Горы</name>
+</tag>
+</Tags>
+<Photo_Tags>
+<photo_tag>
+<tag_id>tag1</photo_tag_id>
+<photo_id>p_1</photo_id>
+</photo_tag>
+<photo_tag>
+<tag_id>tag2</photo_tag_id>
+<photo_id>p_2</photo_id>
+</photo_tag>
+</Photo_Tags>
+</Online_Album>
