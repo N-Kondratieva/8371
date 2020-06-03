@@ -1,66 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE body [
-<!ELEMENT body(order)>
-<!ELEMENT order (date_of_completion, id, service, client, cost, date_of_preparation, status, work_on_order)>
-<!ELEMENT date_of_completion(planned, real)>
-<!ELEMENT id (#PCDATA)>
-<!ELEMENT service(type , cost)>
-<!ELEMENT client(full_name, phone_nunber, email, discount)>
-<!ELEMENT cost (#PCDATA)>
-<!ELEMENT date_of_preparation (#PCDATA)>
-<!ELEMENT status (#PCDATA)>
-<!ELEMENT work_on_order(material_duration, status, master)>
-<!ELEMENT planned (#PCDATA)>
-<!ELEMENT real (#PCDATA)>
-<!ELEMENT full_name (#PCDATA)>
-<!ELEMENT phone_nunber (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT discount (#PCDATA)>
-<!ELEMENT material_duration (#PCDATA)>
-<!ELEMENT status (#PCDATA)>
-<!ELEMENT master (full_name, specialization, phone_nunber, email)>
-<!ELEMENT specialization (mixing, record, bit_creation, mastering)>
-<!ATTLIST mixing option (true | false) "false">
-<!ATTLIST record option record (true | false) "false">
-<!ATTLIST bit_creation option bit_creation (true | false) "false">
-<!ATTLIST mastering option mastering (true | false) "false">
-]>
+
 <body>
-    <order>
-        <date_of_completion>
-            <planned></planned>
-            <real></real>
-        </date_of_completion>
-        <id></id>
-        <service>
-            <type></type>
-            <cost></cost>
-        </service>
-        <client>
-            <full_name></full_name>
-            <phone_nunber></phone_nunber>
-            <email></email>
-            <discount></discount>
+	
+	<orders>
+		<order number="1">
+			<order_id>PK1SM</order_id>
+			<client_id>843IL</client_id>
+			<master_id>AE228</master_id>
+			<service_id>I44</service_id>
+			<material_duration>315</material_duration> <!-- in seconds !-->
+			<order_date>28.06.2019</order_date>	
+			<completion_date>06.07.2019</completion_date>	
+			<status>Выполнен</status>
+			<cost>1488</cost> <!-- in russian rubles !-->
+		</order>
+		<order number="2">
+			<order_id>GG8KB</order_id>
+			<client_id>274SN</client_id>
+			<master_id>OG109</master_id>
+			<service_id>V06</service_id>
+			<material_duration>673</material_duration>
+			<order_date>21.12.2019</order_date>	
+			<completion_date>13.01.2020</completion_date>	
+			<status>Выполнен</status>
+			<cost>2340</cost> 
+		</order>
+		<order number="3">
+			<order_id>YV9HR</order_id>
+			<client_id>631BB</client_id>
+			<master_id>AE228</master_id>
+			<service_id>J79</service_id>
+			<material_duration>447</material_duration>
+			<order_date>18.03.2020</order_date>	
+			<completion_date>02.04.2020</completion_date>	
+			<status>Выполнен</status>
+			<cost>1670</cost> 
+		</order>
+		<order number="4">
+			<order_id>FC6TA</order_id>
+			<client_id>274SN</client_id>
+			<master_id>RO797</master_id>
+			<service_id>E10</service_id>
+			<material_duration>832</material_duration>
+			<order_date>10.04.2020</order_date>	
+			<completion_date>15.04.2020</completion_date>	
+			<status>Выполнен</status>
+			<cost>3670</cost> 
+		</order>
+		<order number="5">
+			<order_id>NJ0UD</order_id>
+			<client_id>585WM</client_id>
+			<master_id>ST387</master_id>
+			<service_id>J79</service_id>
+			<material_duration>564</material_duration>
+			<order_date>01.06.2020</order_date>	
+			<completion_date />
+			<status>Выполняется</status>
+			<cost>1950</cost> 
+		</order>
+	</orders>
+	
+	<clients>
+		<client>
+			<client_id>843IL</client_id>
+            <full_name>Гагаринов Александр Юрьевич</full_name>
+            <phone_number>+79113892437</phone_number>
+            <email>yasasha@yandex.ru</email>
+            <discount>20%</discount>
         </client>
-        <cost></cost>
-        <date_of_preparation></date_of_preparation>
-        <status></status>
-        <work_on_order>
-            <material_duration></material_duration>
-            <status></status>
-            <master>
-                <full_name></full_name>
-                <specialization>
-                    <mixing option=""></mixing>
-                    <record option=""></record>
-                    <bit_creation option=""></bit_creation>
-                    <mastering option=""></mastering>
-                </specialization>
-                <phone_nunber></phone_nunber>
-                <email></email>
-            </master>
-        </work_on_order>
-    </order>
+        <client>
+			<client_id>274SN</client_id>
+            <full_name>Крапивина Екатерина Николаевна</full_name>
+            <phone_number>+79212281488</phone_number>
+            <email>rondaronda@gmail.com</email>
+            <discount>15%</discount>
+        </client>
+		<client>
+			<client_id>631BB</client_id>
+            <full_name>Панкина Екатерина Сергеевна</full_name>
+            <phone_number>+79117890123</phone_number>
+            <email>kotyuwa_zajka2000@mail.ru</email>
+            <discount>5%</discount>
+        </client>
+		<client>
+			<client_id>585WM</client_id>
+            <full_name>Степанов Владимир Алексеевич</full_name>
+            <phone_number>+79996739134</phone_number>
+            <email>vov04k@gmail.com</email>
+            <discount />
+        </client>
+	</clients>
+	
+	<masters>
+		<master>
+			<master_id>AE228</master_id>
+			<full_name>Герасимова Екатерина Евгеньевна</full_name>
+	        <phone_number>+79213762837</phone_number>
+	        <email>etonekotya@gmail.com</email>
+	    </master>
+	    <master>
+			<master_id>OG109</master_id>
+			<full_name>Любалина Варвара Данииловна</full_name>
+	        <phone_number>+79113780906</phone_number>
+	        <email>varyaliubalina@mail.ru</email>
+	    </master>
+	    <master>
+			<master_id>RO797</master_id>
+			<full_name>Кулаков Илья Игоревич</full_name>
+	        <phone_number>+79214672864</phone_number>
+	        <email>ilyusha666@yandex.ru</email>
+	    </master>
+	    <master>
+			<master_id>ST387</master_id>
+			<full_name>Кацапов Алексей Валерьевич</full_name>
+	        <phone_number>+79113637212</phone_number>
+	        <email>lexalyaxa@mail.ru</email>
+	    </master>
+	</masters>
+	
+	<services>
+		<service>
+			<service_id>I44</service_id>
+			<name>Mixing</name>
+		</service>
+		<service>
+			<service_id>V06</service_id>
+			<name>Recording</name>
+		</service>
+		<service>
+			<service_id>J79</service_id>
+			<name>Bit creation</name>
+		</service>
+		<service>
+			<service_id>E10</service_id>
+			<name>Mastering</name>
+		</service>
+	</services>
+	
+	<specializations>
+		<specialization>
+			<master_id>AE228</master_id>
+			<service_id>I44</service_id>
+			<service_id>J79</service_id>
+		</specialization>
+		<specialization>
+			<master_id>OG109</master_id>
+			<service_id>V06</service_id>
+		</specialization>
+		<specialization>
+			<master_id>RO797</master_id>
+			<service_id>E10</service_id>
+		</specialization>
+		<specialization>
+			<master_id>ST387</master_id>
+			<service_id>J79</service_id>
+		</specialization>
+	</specializations>
+	
+</body>	
+	
+	
+	
+	
 
-
-</body>

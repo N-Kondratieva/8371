@@ -1,0 +1,35 @@
+<?xml encoding="utf-8"?>
+<!DOCTYPE body [
+<!ELEMENT body (orders, clients, masters, services, specializations)>
+<!ELEMENT orders (order)>
+<!ELEMENT order (order_id, client_id, master_id, service_id, material_duration, order_date, status, cost)>
+<!ELEMENT order_id (#PCDATA)>
+<!ELEMENT client_id (#PCDATA)>
+<!ELEMENT master_id (#PCDATA)>
+<!ELEMENT service_id (#PCDATA)>
+<!ELEMENT material_duration (#PCDATA)>
+<!ELEMENT order_date (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT clients (client)>
+<!ELEMENT client (client_id, full_name, phone_number, email, discount)>
+<!ELEMENT client_id (#PCDATA)>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT discount (#PCDATA)>
+<!ELEMENT masterts (master)>
+<!ELEMENT master (master_id, full_name, phone_number, email)>
+<!ELEMENT master_id (#PCDATA)>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT services (service)>
+<!ELEMENT services (service_id, name)>
+<!ELEMENT service_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT specializations (specialization)>
+<!ELEMENT specialisation (master_id, service_id)>
+<!ELEMENT master_id (#PCDATA)>
+<!ELEMENT diservice_id (#PCDATA)>
+]>
