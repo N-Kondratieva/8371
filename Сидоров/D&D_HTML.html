@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Dungeons and Dragons</title>
+  <H1 style="color:#52294B">Dungeons and Dragons</H1>
+  <style>
+   table {
+    width: 100%; 
+    background: WHITE; 
+    color: #52294B; 
+    border-spacing: 1px; 
+   }
+   td, th {
+    background: rgb(212, 185, 182); 
+    padding: 5px;
+   }
+  </style>
+ </head> 
+ <body>
+     <table>
+         <tr>
+             <th colspan="2">Игроки</th>
+         </tr>
+         <tr>
+             <th>ID Игрока</th>
+             <th>Имя игрока</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+        <tr>
+            <th colspan="10">Персонажи</th>
+        </tr>
+        <tr>
+            <th>ID Персонажа</th>
+            <th>ID Игрока</th>
+            <th>ID Подрасы</th>
+            <th>ID Расы</th>
+            <th>ID Класса</th>
+            <th>Имя персонажа</th>
+            <th>Уровень</th>
+            <th>Опыт</th>
+            <th>КД</th>
+            <th>Биография</th>
+        </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Справочник характеристик</th>
+         </tr>
+         <tr>
+             <th>Название характеристики</th>
+             <th>ID Характеристики</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="6">Характеристики персонажей</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+             <th>ID Характеристики</th>
+             <th>Значение</th>
+             <th>Модификатор</th>
+             <th>Спасбросок</th>
+             <th>Тренировка</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="3">Справочник навыков</th>
+         </tr>
+         <tr>
+             <th>Название навыка</th>
+             <th>ID Навыка</th>
+             <th>ID Характеристики</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="4">Навыки персонажей</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+             <th>ID Навыка</th>
+             <th>Значение</th>
+             <th>Тренировка</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="4">Хиты персонажей</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+             <th>Максимум</th>
+             <th>Текущие</th>
+             <th>Временные</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="5">Расы</th>
+         </tr>
+         <tr>
+             <th>ID Расы</th>
+             <th>Название</th>
+             <th>Описание</th>
+             <th>ID Характеристики</th>
+             <th>Бонус</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="6">Подрасы</th>
+         </tr>
+         <tr>
+             <th>ID Подрасы</th>
+             <th>ID Расы</th>
+             <th>Название</th>
+             <th>Описание</th>
+             <th>ID Характеристики</th>
+             <th>Бонус</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="5">Кошельки</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+             <th>Платиновы</th>
+             <th>Золотые</th>
+             <th>Серебряные</th>
+             <th>Медные</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="3">Классы</th>
+         </tr>
+         <tr>
+             <th>ID Класса</th>
+             <th>Название</th>
+             <th>Описание</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Классовые навыки</th>
+         </tr>
+         <tr>
+             <th>ID Класса</th>
+             <th>ID Навыка</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Классовые спасброски</th>
+         </tr>
+         <tr>
+             <th>ID Класса</th>
+             <th>ID Характеристики</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Инвентари</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+             <th>ID Предмета</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="3">Справочник предметов</th>
+         </tr>
+         <tr>
+             <th>ID Предмета</th>
+             <th>Название</th>
+             <th>Описание</th>
+         </tr> 
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="7">Бестиарий</th>
+         </tr>
+         <tr>
+             <th>ID Существа</th>
+             <th>Название</th>
+             <th>Хиты</th>
+             <th>Опыт</th>
+             <th>КД</th>
+             <th>Описание</th>
+             <th>Опасность</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="5">Характеристики существ</th>
+         </tr>
+         <tr>
+             <th>ID Существа</th>
+             <th>ID Характеристики</th>
+             <th>Значение</th>
+             <th>Модификатор</th>
+             <th>Спасбросок</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="3">Навыки существ</th>
+         </tr>
+         <tr>
+             <th>ID Существа</th>
+             <th>ID Навыка</th>
+             <th>Значение</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Сцены</th>
+         </tr>
+         <tr>
+             <th>ID Сцены</th>
+             <th>Описание</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="5">Справочник черт</th>
+         </tr>
+         <tr>
+             <th>ID Черты</th>
+             <th>Название</th>
+             <th>Описание</th>
+             <th>ID Характеристики</th>
+             <th>Бонус</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Черты персонажей</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+             <th>ID Черты</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Предметы в сценах</th>
+         </tr>
+         <tr>
+             <th>ID Сцены</th>
+             <th>ID Предмета</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Персонажи в сценах</th>
+         </tr>
+         <tr>
+             <th>ID Сцены</th>
+             <th>ID Персонажа</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th colspan="2">Существа в сценах</th>
+         </tr>
+         <tr>
+             <th>ID Сцены</th>
+             <th>ID Существа</th>
+         </tr>
+     </table>
+     <p></p>
+     <table>
+         <tr>
+             <th>Персонажи мастера</th>
+         </tr>
+         <tr>
+             <th>ID Персонажа</th>
+         </tr>
+     </table>
+    </body>
+    
+    
+   
+  

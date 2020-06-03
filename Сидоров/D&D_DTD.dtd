@@ -40,7 +40,8 @@
     <!ELEMENT Справочник_Навыков (Название_Навыка*)>
     <!ELEMENT Название_Навыка (#PCDATA)>
     <!ATTLIST Название_Навыка
-        ID_Навыка ID #REQUIRED>
+        ID_Навыка ID #REQUIRED
+        ID_Характеристики IDREF #REQUIRED>
     
     <!ELEMENT Навыки_Персонажей (Навык_Персонажа*)>
     <!ELEMENT Навык_Персонажа (Значение, Тренировка)>
@@ -120,10 +121,11 @@
         ID_Предмета IDREF #REQUIRED>
         
     <!ELEMENT Бестиарий (Существо*)>
-    <!ELEMENT Существо (Название, Хиты, Опасность, Описание, Опыт)>
+    <!ELEMENT Существо (Название, Хиты, Опасность, КД, Описание, Опыт)>
     <!ELEMENT Название (#PCDATA)>
     <!ELEMENT Хиты (#PCDATA)>
     <!ELEMENT Опасность (#PCDATA)>
+    <!ELEMENT КД (#PCDATA)>
     <!ELEMENT Описание (#PCDATA)>
     <!ELEMENT Опыт (#PCDATA)>
     <!ATTLIST Существо
