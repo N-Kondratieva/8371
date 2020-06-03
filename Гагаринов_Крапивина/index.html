@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #142b44;
+    }
+    div{
+        margin-top: 95px;
+    }
+    table {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+      font-size: 14px;
+      border-collapse: collapse;
+      text-align: center;
+      margin-bottom: 5px;
+
+      margin: auto;
+      margin-top: 20px;
+    }
+    th {
+      background: #afcde7;
+      color: white;
+      padding: 10px 20px;
+    }
+    th,
+    td {
+      border-style: solid;
+      border-width: 0 1px 1px 0;
+      border-color: white;
+      padding: 5px;
+    }
+    td {
+      background: #d8e6f3;
+    }
+    .one {
+      background-color: #142b44;
+      border: 0px;
+      padding-top: 0px;
+    }
+    .two{
+        margin-top: 0px;
+    }
+  </style>
+  <body>
+      <div>
+        <table>
+            <tr>
+                <th>ID заказа</th>
+                <th>ID клиента</th>
+                <th>ID мастера</th>
+                <th>ID услуги</th>
+                <th>Длительность материала</th>
+                <th>Дата заказа</th>
+                <th>Дата выполнения</th>
+                <th>Статус</th>
+                <th>Стоимость</th>
+            </tr>
+            <tr>
+                <td>PK1SM</td>
+                <td>843IL</td>
+                <td>AE228</td>
+                <td>I44</td>
+                <td>315</td>
+                <td>28.06.2019</td>
+                <td>06.07.2019</td>
+                <td>Выполнен</td>
+                <td>1488</td>
+            </tr>
+            <tr>
+                <td>GG8KB</td>
+                <td>274SN</td>
+                <td>OG109</td>
+                <td>V06</td>
+                <td>673</td>
+                <td>21.12.2019</td>
+                <td>13.01.2020</td>
+                <td>Выполнен</td>
+                <td>2340</td>
+            </tr>
+            <tr>
+                <td>YV9HR</td>
+                <td>631BB</td>
+                <td>AE228</td>
+                <td>J79</td>
+                <td>447</td>
+                <td>18.03.2020</td>
+                <td>02.04.2020</td>
+                <td>Выполнен</td>
+                <td>1670</td>
+            </tr>
+            <tr>
+                <td>FC6TA</td>
+                <td>274SN</td>
+                <td>RO797</td>
+                <td>E10</td>
+                <td>832</td>
+                <td>10.04.2020</td>
+                <td>15.04.2020</td>
+                <td>Выполнен</td>
+                <td>3670</td>
+            </tr>
+            <tr>
+                <td>NJ0UD</td>
+                <td>585WM</td>
+                <td>ST387</td>
+                <td>J79</td>
+                <td>564</td>
+                <td>01.06.2020</td>
+                <td></td>
+                <td>Выполняется</td>
+                <td>1950</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>ID клиента</th>
+                <th>ФИО</th>
+                <th>Телефон</th>
+                <th>Email</th>
+                <th>Скидка</th>
+            </tr>
+            <tr>
+                <td>843IL</td>
+                <td>Гагаринов Александр Юрьевич</td>
+                <td>+79113892437</td>
+                <td>yasasha@yandex.ru</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>274SN</td>
+                <td>Крапивина Екатерина Николаевна</td>
+                <td>+79212281488</td>
+                <td>rondaronda@gmail.com</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>631BB</td>
+                <td>Панкина Екатерина Сергеевна</td>
+                <td>+79117890123</td>
+                <td>kotyuwa_zajka2000@mail.ru</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>585WM</td>
+                <td>Степанов Владимир Алексеевич</td>
+                <td>+79996739134</td>
+                <td>vov04k@gmail.com</td>
+                <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>ID мастера</th>
+                <th>ФИО</th>
+                <th>Телефон</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>AE228</td>
+                <td>Герасимова Екатерина Евгеньевна</td>
+                <td>+79213762837</td>
+                <td>etonekotya@gmail.com</td>
+            </tr>
+            <tr>
+                <td>OG109</td>
+                <td>Любалина Варвара Данииловна</td>
+                <td>+79113780906</td>
+                <td>varyaliubalina@mail.ru</td>
+            </tr>
+            <tr>
+                <td>RO797</td>
+                <td>Кулаков Илья Игоревич</td>
+                <td>+79214672864</td>
+                <td>ilyusha666@yandex.ru</td>
+            </tr>
+            <tr>
+                <td>ST387</td>
+                <td>Кацапов Алексей Валерьевич</td>
+                <td>+79113637212</td>
+                <td>lexalyaxa@mail.ru</td>
+            </tr>
+        </table>
+        <table class="two">
+            <tr>
+                <td align="left" class="one">
+                    <table>
+                        <tr>
+                            <th>ID услуги</th>
+                            <th>Название</th>
+                        </tr>
+                        <tr>
+                            <td>I44</td>
+                            <td>Mixing</td>
+                        </tr>
+                        <tr>
+                            <td>V06</td>
+                            <td>Recording</td>
+                        </tr>
+                        <tr>
+                            <td>J79</td>
+                            <td>Bit creation</td>
+                        </tr>
+                        <tr>
+                            <td>E10</td>
+                            <td>Mastering</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="one">
+                    <table>
+                        <tr>
+                            <th>ID мастера</th>
+                            <th>ID услуга</th>
+                        </tr>
+                        <tr>
+                            <td>AE228</td>
+                            <td>I44, J78</td>
+                        </tr>
+                        <tr>
+                            <td>OG109</td>
+                            <td>V06</td>
+                        </tr>
+                        <tr>
+                            <td>RO797</td>
+                            <td>E10</td>
+                        </tr>
+                        <tr>
+                            <td>ST387</td>
+                            <td>J79</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </table>
+      </div>
+    
+  </body>
+</html>
