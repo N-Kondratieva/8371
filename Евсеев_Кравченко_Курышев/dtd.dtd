@@ -1,0 +1,57 @@
+<!ELEMENT автомастерская (роли, статусы_заказа, заказы_ремонта, типы_оплаты, статусы_детали, марки_машин, модели_машин, применимости, применимость_тип, типы_деталей, детали, специальности_механиков, механики, специальность_механик, расписание)>
+        <!ELEMENT роли (роль)>
+        <!ELEMENT роль (пользователь*)>
+        <!ELEMENT пользователь (#PCDATA)>
+        <!ELEMENT статусы_заказа (статус_заказа)>
+        <!ELEMENT статус_заказа (#PCDATA)>
+        <!ELEMENT заказы_ремонта (заказ_ремонта)>
+        <!ELEMENT заказ_ремонта (#PCDATA)>
+        <!ELEMENT типы_оплаты (тип_оплаты)>
+        <!ELEMENT тип_оплаты (#PCDATA)>
+        <!ELEMENT статусы_детали (статус_детали)>
+        <!ELEMENT статус_детали (#PCDATA)>
+        <!ELEMENT марки_машин (марка_машины)>
+        <!ELEMENT марка_машины (#PCDATA)>
+        <!ELEMENT модели_машин (модель_машины)>
+        <!ELEMENT модель_машины (#PCDATA)>
+        <!ELEMENT применимости (применимость)>
+        <!ELEMENT применимость (#PCDATA)>
+        <!ELEMENT применимость_тип (связь_применимость_тип)>
+        <!ELEMENT связь_применимость_тип (#PCDATA)>
+        <!ELEMENT тип_детали (#PCDATA)>
+        <!ELEMENT типы_деталей (тип_детали)>
+        <!ELEMENT детали (деталь)>
+        <!ELEMENT деталь (#PCDATA)>
+        <!ELEMENT специальности_механиков (специальность_механика)>
+        <!ELEMENT специальность_механика (#PCDATA)>
+        <!ELEMENT механики (механик)>
+        <!ELEMENT механик (#PCDATA)>
+        <!ELEMENT расписание (строка_расписания)>
+        <!ELEMENT строка_расписания (#PCDATA)>
+        <!ATTLIST роль название (клиент | главный_механик | менеджер | менеджер_по_закупкам) "клиент">
+        <!ATTLIST роль id ID #REQUIRED>
+        <!ATTLIST пользователь id ID #REQUIRED>
+        <!ATTLIST пользователь логин CDATA #REQUIRED>
+        <!ATTLIST пользователь пароль CDATA #REQUIRED>
+        <!ATTLIST пользователь id_роли IDREF #REQUIRED>
+        <!ATTLIST статус_заказа название CDATA #REQUIRED>
+        <!ATTLIST статус_заказа id ID #REQUIRED>
+        <!ATTLIST заказ_ремонта id ID #REQUIRED>
+        <!ATTLIST заказ_ремонта id_стаутса_заказа IDREF  #REQUIRED>
+        <!ATTLIST заказ_ремонта id_клиента IDREF  #REQUIRED>
+        <!ATTLIST заказ_ремонта дата_начала CDATA #REQUIRED>
+        <!ATTLIST заказ_ремонта дата_выполнения CDATA #REQUIRED>
+        <!ATTLIST завяка_на_услугу id ID #REQUIRED>
+        <!ATTLIST заявка_на_услугу id_заказа IDREF  #REQUIRED>
+        <!ATTLIST заявка_на_услугу id_типа_работы IDREF  #REQUIRED>
+        <!ATTLIST заявка_на_услугу id_строки_расписания IDREF  #REQUIRED>
+        <!ATTLIST заявка_на_услугу id_марки IDREF #REQUIRED>
+        <!ATTLIST заявка_на_услугу id_модели IDREF #REQUIRED>
+        <!ATTLIST тип_оплаты назавние CDATA #REQUIRED>
+        <!ATTLIST тип_оплаты id CDATA #REQUIRED>
+        <!ATTLIST статус_детали название CDATA #REQUIRED>
+        <!ATTLIST статус_детали id CDATA #REQUIRED>
+        <!ATTLIST марка_машины название CDATA #REQUIRED>
+        <!ATTLIST марка_машины id CDATA #REQUIRED>
+        <!ATTLIST модель_машины название CDATA #REQUIRED>
+        <!ATTLIST модель_машины id CDATA #REQUIRED>
