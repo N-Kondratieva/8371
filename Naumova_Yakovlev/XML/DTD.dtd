@@ -1,0 +1,58 @@
+<!ELEMENT conferences_org (conferences, sections, audiences, winners, lecturers, lectures, registrations, visitors, marks)>
+<!ELEMENT conferences (conference*)>
+<!ELEMENT conference (conf_ID, conf_theme, conf_date)>
+<!ELEMENT conf_ID (#PCDATA)>
+<!ELEMENT conf_theme (#PCDATA)>
+<!ELEMENT conf_date (day, month, year)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT sections (section*)>
+<!ELEMENT section (sec_ID, sec_theme, conf_ID, audience_ID)>
+<!ELEMENT sec_ID (#PCDATA)>
+<!ELEMENT sec_theme (#PCDATA)>
+<!ELEMENT conf_ID (#PCDATA)>
+<!ELEMENT audience_ID (#PCDATA)>
+<!ELEMENT audiences (audience*)>
+<!ELEMENT audience (audience_ID, audience_size)>
+<!ELEMENT audience_ID (#PCDATA)>
+<!ELEMENT audience_size (#PCDATA)>
+<!ELEMENT winners (winner*)>
+<!ELEMENT winner (lect_ID, sec_ID)>
+<!ELEMENT lecturers (lecturer*)>
+<!ELEMENT lecturer (lect_ID, full_name, contact_details)>
+<!ELEMENT lect_ID (#PCDATA)>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT contact_details (number, email)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT lectures (lecture*)>
+<!ELEMENT lecture (lec_ID, sec_ID, lect_ID, lec_theme, start_time, duration, avr_appraisal)>
+<!ELEMENT lec_ID (#PCDATA)>
+<!ELEMENT sec_ID (#PCDATA)>
+<!ELEMENT lect_ID (#PCDATA)>
+<!ELEMENT lec_theme (#PCDATA)>
+<!ELEMENT start_time (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT avr_appraisal (#PCDATA)>
+<!ELEMENT registrations (application*)>
+<!ELEMENT application (app_ID, visitor_ID, lec_ID)>
+<!ELEMENT app_ID (#PCDATA)>
+<!ELEMENT visitor_ID (#PCDATA)>
+<!ELEMENT lec_ID (#PCDATA)>
+<!ELEMENT visitors (visitor*)>
+<!ELEMENT visitor (visitor_ID, full_name, contact_details)>
+<!ELEMENT visitor_ID (#PCDATA)>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT contact_details (number, email)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT marks (mark*)>
+<!ELEMENT mark (visitor_ID, lec_ID, value)>
+<!ELEMENT visitor_ID (#PCDATA)>
+<!ELEMENT lec_ID (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+
+
+
+
