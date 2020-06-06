@@ -1,0 +1,41 @@
+<body>
+  <customers>
+    <customer id = "cu404" login = "ivan" password = "67654">
+      <name>Ivan</name>
+      <phone_number>+78654321234</phone_number>
+      <address>Moscow, Sadovaya st., 56/43</address>
+    </customer>
+  </customers>
+  <managers>
+    <manager id = "ma678" login = "boss" password = "09876"></manager>
+  </managers>
+  <chiefs>
+    <chief id = "ch654" login = "chief" password = "33333"></chief>
+  </chiefs>
+  <orders>
+    <order id = "or677">
+      <time>10:42</time>
+      <status_id>os106</status_id>
+      <customer_id>cu404</customer_id>
+      <dish_list>crabsburger, cola(0.4)</dish_list>
+      <price>4$</price>
+    </order>
+  </orders>
+  <order_statuses>
+    <order_status id = "os106" state = "delivered">
+      <courier_id>m102</courier_id>
+      <delivery_time>11:42</delivery_time>
+  </order_statuses>
+  <payments>
+    <payment id = "pa500">
+      <value>4$</value>
+      <type>cash<type>
+    <payment>
+  </payments>
+  <couriers>
+    <courier id = "co545">
+      <name>Mickey</name>
+      <phone_number>+78907654321</phone_number>
+    </courier>
+  </couriers>
+</body>
