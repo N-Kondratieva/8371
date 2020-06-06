@@ -25,12 +25,13 @@
     <order_status id = "os106" state = "delivered">
       <courier_id>m102</courier_id>
       <delivery_time>11:42</delivery_time>
+    </order_status>
   </order_statuses>
   <payments>
     <payment id = "pa500">
       <value>4$</value>
-      <type>cash<type>
-    <payment>
+      <type>cash</type>
+    </payment>
   </payments>
   <couriers>
     <courier id = "co545">
