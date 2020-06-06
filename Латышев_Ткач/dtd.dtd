@@ -1,0 +1,60 @@
+<?xml encoding="utf-8"?>
+<!DOCTYPE body [
+<!ELEMENT body (customers, managers, chiefs, orders, order_statuses, payments, couriers)>
+
+<!ELEMENT customers (customer)>
+<!ELEMENT customer (name, phone_number, address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST customer
+  id ID #REQUIRED
+  login #REQUIRED
+  password #REQUIRED >
+
+<!ELEMENT managers (manager)>
+<!ELEMENT manager EMPTY>
+<!ATTLIST manager
+  id ID #REQUIRED
+  login #REQUIRED
+  password #REQUIRED >
+
+<!ELEMENT chiefs (chief)>
+<!ELEMENT chief EMPTY>
+<!ATTLIST chief
+  id ID #REQUIRED
+  login #REQUIRED
+  password #REQUIRED >
+
+<!ELEMENT orders (order)>
+<!ELEMENT order (time, status_id, customer_id, dish_list, price)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT status_id (#PCDATA)>
+<!ELEMENT customer_id (#PCDATA)>
+<!ELEMENT dish_list (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST order
+  id ID #REQUIRED>
+
+<!ELEMENT order_statuses (order_status)>
+<!ELEMENT order_status (courier_id, delivery_time, state)>
+<!ELEMENT courier_id (#PCDATA)>
+<!ELEMENT delivery_time (#PCDATA)>
+<!ATTLIST order_status
+  id ID #REQUIRED
+  state (being_cooked | being_delivered | is_delivered | cancelled) #REQUIRED>
+
+<!ELEMENT payments (payment)>
+<!ELEMENT payment (value, type)
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ATTLIST payment
+  id ID #REQUIRED>
+
+<!ELEMENT couriers (courier)>
+<!ELEMENT courier(name, phone_number)
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ATTLIST courier
+  id ID #REQUIRED>
+]>
