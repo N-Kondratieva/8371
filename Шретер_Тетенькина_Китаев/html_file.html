@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Поликлиника</title>
+    <style>
+        table, th, td 
+        {
+            border: 2px solid rgb(87, 122, 160);
+            text-align: center;
+        }
+        th
+        {
+            width: 100px;
+        }
+        .title
+        {
+            color: #2F4F4F;
+            font-size: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px solid rgb(170, 189, 204);
+            background-color: #B0C4DE;
+        }
+        .links
+        {
+            color: #4682B4;
+        }
+        .text
+        {
+            color: #2F4F4F;
+            font-size: 30px;
+
+        }
+        .tabl
+        {
+            color: #2F4F4F;
+            font-size: 40px;    
+        }
+        .c {
+            display: inline-block;
+            padding: 5px 15px; 
+            text-decoration: none; 
+            color: #4682B4; 
+            }
+   .c:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #F0FFFF, #87CEFA); 
+    color: rgb(4, 37, 53);
+   }
+    </style>
+	<h1 align = "center" class = "title">Поликлиника №1</h1>
+</head>
+
+<body style="background: #F8F8FF;font-family:century gothic, Arial, sans-serif">
+    <nav id="menu">
+        <ul>
+            <li class = "links"><a class="c" href="record">Запись на прием</a></li>
+            <li class = "links"><a class="c" href="contactme">Контакты</a></li>
+            <li class = "links"><a class="c" href="q&a">Задать вопрос</a></li>
+        </ul>
+    </nav>
+    <h3 align = "center" class = "tabl">Расписание врачей</h3>
+    <table align="center">
+        <tr>
+            <th>ФИО врача</th>
+            <th>Кабинет</th> 
+            <th>Понедельник</th> 
+            <th>Вторник</th> 
+            <th>Среда</th> 
+            <th>Четверг</th> 
+            <th>Пятница</th> 
+            <th>Суббота</th>    
+        </tr>
+        <tr>
+            <td>Абрамова Л.Д. (врач гастроэнтеролог)</td>
+            <td>211</td> 
+            <td>9:40 - 14:30</td> 
+            <td>10:20 - 15:10</td> 
+            <td>Выходной</td> 
+            <td>Выходной</td> 
+            <td>8:00 - 11:50</td> 
+            <td>Выходной</td>    
+        </tr>
+        <tr>
+            <td>Данилов В.В. (врач хирург)</td>
+            <td>301</td> 
+            <td>9:30 - 13:50</td> 
+            <td>8:50 - 12:40</td> 
+            <td>9:40 - 14:00</td> 
+            <td>10:20 - 15:10</td> 
+            <td>Выходной</td> 
+            <td>Выходной</td>    
+        </tr>
+        <tr>
+            <td>Калашников Р.Е. (врач кардиолог)</td>
+            <td>204</td> 
+            <td>Выходной</td> 
+            <td>Выходной</td> 
+            <td>10:10 - 15:30</td> 
+            <td>11:40 - 15:50</td> 
+            <td>Выходной</td> 
+            <td>10:10 - 14:20</td>    
+        </tr>
+        <tr>
+            <td>Кузина А.В. (врач терапевт)</td>
+            <td>102</td> 
+            <td>11:10 - 15:30</td> 
+            <td>Выходной</td> 
+            <td>9:50 - 13:50</td> 
+            <td>10:00 - 14:30</td> 
+            <td>Выходной</td> 
+            <td>Выходной</td>    
+        </tr>
+        <tr>
+            <td>Самойлова С.Н. (врач невролог)</td>
+            <td>120</td> 
+            <td>Выходной</td> 
+            <td>12:10 - 16:30</td> 
+            <td>9:40 - 14:30</td> 
+            <td>Выходной</td> 
+            <td>Выходной</td> 
+            <td>10:10 - 14:20</td>    
+        </tr>
+        <tr>
+            <td>Степанов А.Г. (врач офтальмолог)</td>
+            <td>223</td> 
+            <td>Выходной</td> 
+            <td>Выходной</td> 
+            <td>9:20 - 13:50</td> 
+            <td>Выходной</td> 
+            <td>10:00 - 14:40</td> 
+            <td>13:00 - 17:40</td>    
+        </tr>
+    </table>
+    <h2 class = "text">Запишитесь на прием онлайн!</h2>
+    <form> 
+        <input placeholder="Введите Ваше имя" type="text" name="name">
+        <input placeholder="Введите Вашу фамилию" type="text" name="lastname">
+        <input placeholder="Введите Ваш email" type="email" name="email-address">
+        <textarea name="comment" cols="40">Напишите здесь Ваши жалобы</textarea>
+        <input type="submit" name="submit" value="Отправить заявку на прием">
+    </form> 
+    <p style="text-align: center;">
+        <img align = "centre" src="http://cgon.rospotrebnadzor.ru/upload/medialibrary/81f/81fe828e34d928a59be84e18e2f92f67.png" width="600" height="400" alt="covid19">
+    </p>
+</body>
