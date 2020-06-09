@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<?xml-stylesheet type='text/xsl' href='XSL.xsl'?>
+<!DOCTYPE автомастерская SYSTEM "DTD.dtd">
+-->
+<conferences_org>
+	<conferences>
+		<conference>
+			<conf_ID> conf1 </conf_ID>
+			<conf_theme>Тема конференции</conf_theme>
+			<conf_date>
+				<day>22</day>
+				<month>02</month>
+				<year>2020</year>
+			</conf_date>
+		</conference>
+	</conferences>
+	<sections>
+		<section>
+			<sec_ID> sec1 </sec_ID>
+			<sec_theme>Тема секции 1</sec_theme>
+			<conf_ID> conf1 </conf_ID>
+			<audience_ID> a1 </audience_ID>
+		</section>
+	</sections>
+	<audiences>
+		<audience>
+			<audience_ID> a1 </audience_ID>
+			<audience_size> 100 </audience_size>
+		</audience>
+	</audiences>
+	<winners>
+		<winner>
+			<lect_ID> lect1 </lect_ID>
+			<sec_ID> sec1 </sec_ID>
+		</winner>
+	</winners>
+	<lecturers>
+		<lecturer>
+			<lect_ID> lect1 </lect_ID>
+			<full_name>Name1</full_name>
+			<contact_details>
+				<number>+7 987 654 32 10</number>
+				<email>lmail@mail.ru</email>
+			</contact_details>
+		</lecturer>
+		<lecturer>
+			<lect_ID> lect2 </lect_ID>
+			<full_name>Name2</full_name>
+			<contact_details>
+				<number>+7 123 456 78 90</number>
+				<email>l2mail@mail.ru</email>
+			</contact_details>
+		</lecturer>
+	</lecturers>
+	<lectures>
+		<lecture>
+			<lec_ID> lec1 </lec_ID>
+			<sec_ID> sec1 </sec_ID>
+			<lect_ID> lect1 </lect_ID>
+			<lec_theme>Тема лекции 1</lec_theme>
+			<start_time>14:00</start_time>
+			<duration>80 минут</duration>
+			<avr_appraisal>8</avr_appraisal>
+		</lecture>
+		<lecture>
+			<lec_ID> lec2 </lec_ID>
+			<sec_ID> sec1 </sec_ID>
+			<lect_ID> lect2 </lect_ID>
+			<lec_theme>Тема лекции 2</lec_theme>
+			<start_time>16:00</start_time>
+			<duration>60 минут</duration>
+			<avr_appraisal>7</avr_appraisal>
+		</lecture>
+	</lectures>
+	<registrations>
+		<application>
+			<app_ID> app1 </app_ID>
+			<visitor_ID> vis1 </visitor_ID>
+			<lec_ID> lec1 </lec_ID>
+		</application>
+		<application>
+			<app_ID> app2 </app_ID>
+			<visitor_ID> vis1 </visitor_ID>
+			<lec_ID> lec2 </lec_ID>
+		</application>
+		<application>
+			<app_ID> app3 </app_ID>
+			<visitor_ID> vis2 </visitor_ID>
+			<lec_ID> lec1 </lec_ID>
+		</application>
+		<application>
+			<app_ID> app4 </app_ID>
+			<visitor_ID> vis2 </visitor_ID>
+			<lec_ID> lec2 </lec_ID>
+		</application>
+	</registrations>
+	<visitors>
+		<visitor>
+			<visitor_ID> vis1 </visitor_ID>
+			<full_name>Name1</full_name>
+			<contact_details>
+				<number>+7 987 213 44 22</number>
+				<email>lmail@mail.ru</email>
+			</contact_details>
+		</visitor>
+		<visitor>
+			<visitor_ID> vis2 </visitor_ID>
+			<full_name>Name2</full_name>
+			<contact_details>
+				<number>+7 345 879 34 34</number>
+				<email>guestmail@mail.ru</email>
+			</contact_details>
+		</visitor>
+	</visitors>
+	<marks>
+		<mark>
+			<visitor_ID> vis1 </visitor_ID>
+			<lec_ID> lec1 </lec_ID>
+			<value>7</value>
+		</mark>
+		<mark>
+			<visitor_ID> vis2 </visitor_ID>
+			<lec_ID> lec1 </lec_ID>
+			<value>9</value>
+		</mark>
+		<mark>
+			<visitor_ID> vis1 </visitor_ID>
+			<lec_ID> lec2 </lec_ID>
+			<value>6</value>
+		</mark>
+		<mark>
+			<visitor_ID> vis2 </visitor_ID>
+			<lec_ID> lec2 </lec_ID>
+			<value>8</value>
+		</mark>
+	</marks>
+</conferences_org>
