@@ -8,7 +8,7 @@ public class ViewingWarehouseDrugs {
     public static int ViewWarehouseDrugs() {
         final JFrame frame = new JFrame("Просмотр текущих препаратов на складе");
         frame.setSize(1000, 700);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         JPanel panel = new JPanel(null);
         JLabel labelName = new JLabel("Склад:");

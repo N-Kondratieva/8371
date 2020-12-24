@@ -4,7 +4,7 @@ public class ViewingSingleOrder {
     public static int ViewOrder() {
         final JFrame frame = new JFrame("Заказ номер #"); //Приделать номер заказа
         frame.setSize(1000, 700);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         JPanel panel = new JPanel(null);
         JLabel labNum = new JLabel("Номер лаборатории:");

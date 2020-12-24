@@ -6,7 +6,7 @@ public class Appointment {
     public static int appointmentWindow() {
         final JFrame mainFrame = new JFrame("Назначение исследовательской работы");
         mainFrame.setSize(1000, 700);
-        mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        mainFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         JPanel panel = new JPanel(null);
         // Верхняя панель: Номер работы, название работы, дата начала, дата  окончания //

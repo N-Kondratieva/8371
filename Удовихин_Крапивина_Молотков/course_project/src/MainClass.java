@@ -20,13 +20,15 @@ public class MainClass{
         buttonLabControl.addActionListener(l -> {
             LabControl sc= new LabControl();
             sc.Control();
+            frame.setVisible(false);
         });
         JButton buttonWareHouseControl = new JButton("Управление складом");
         buttonWareHouseControl.addActionListener(l -> {
-            //WareHouseControl sc= new WareHouseControl();
-            //sc.Control();
-            ViewingSingleOrder sc = new ViewingSingleOrder();
-            sc.ViewOrder();
+            WareHouseControl sc= new WareHouseControl();
+            sc.Control();
+            //ViewingSingleOrder sc = new ViewingSingleOrder();
+            //sc.ViewOrder();
+            frame.setVisible(false);
 
         });
 

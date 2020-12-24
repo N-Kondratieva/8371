@@ -10,7 +10,7 @@ public class show_all_researches {
         String[] a={""};
         final JFrame frame = new JFrame("Просмотр всех исследовательских работ");
         frame.setSize(1000, 700);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         JButton buttonviewdoneresearch = new JButton("Вывести выполненные работы");
         buttonviewdoneresearch.addActionListener(l -> {

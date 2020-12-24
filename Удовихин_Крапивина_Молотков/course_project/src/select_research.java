@@ -24,7 +24,7 @@ public class select_research {
         System.out.println(120);
         final JFrame frame = new JFrame("Исследование№"+current_research_id); //Приделать номер заказа
         frame.setSize(1000, 500);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         while(rs.next()) {
             String research_id = rs.getString("research_id").toString();
             String research_name = rs.getString("research_name").toString();

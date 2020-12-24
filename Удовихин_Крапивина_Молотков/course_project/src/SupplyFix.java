@@ -4,7 +4,7 @@ public class SupplyFix {
     public static int Fix() {
         final JFrame frame = new JFrame("Фиксация поставки");
         frame.setSize(1000, 700);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         JPanel panel = new JPanel(null);
         JLabel labNum = new JLabel("Номер заказа поставки:");

@@ -6,7 +6,7 @@ public class DrugsList {
     public static int viewDrugsList() {
         final JFrame frame = new JFrame("Просмотр наличия препаратов на складе");
         frame.setSize(1000, 700);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
         JPanel panel = new JPanel(null);
 
