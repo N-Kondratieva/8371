@@ -1,3 +1,5 @@
+package data;
+
 public class Research {
     int researchID;
     String researchName;

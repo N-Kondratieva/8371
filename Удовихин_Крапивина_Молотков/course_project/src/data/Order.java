@@ -1,5 +1,7 @@
+package data;
+
 public class Order {
-    int orderID;
-    int researchID;
-    String issueDate;
+    public static String orderID;
+    public static String researchID;
+    public static String issueDate;
 }
