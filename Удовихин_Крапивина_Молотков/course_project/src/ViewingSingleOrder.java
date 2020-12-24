@@ -1,28 +1,8 @@
 import javax.swing.*;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class ViewingSingleOrder {
-    public static int ViewOrder(String current_order_id) throws SQLException {
-
-        ResultSet rs=null;
-        PreparedStatement view;
-        {
-            try {
-                view = JDBCPostgreSQL.connection.prepareStatement("SELECT * FROM orders WHERE order_id="+current_order_id);
-                rs = view.executeQuery();
-            }
-            catch(SQLException ex){
-            }
-        }
-        while (rs.next()) {
-            data.Order.orderID = rs.getString("order_id");
-            data.Order.researchID = rs.getString("research_id");
-            data.Order.issueDate = rs.getString("issue_date");
-        }
-
-        final JFrame frame = new JFrame("Заказ номер: "+data.Order.orderID); //Приделать номер заказа
+    public static int ViewOrder() {
+        final JFrame frame = new JFrame("Заказ номер #"); //Приделать номер заказа
         frame.setSize(1000, 700);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -30,9 +10,9 @@ public class ViewingSingleOrder {
         JLabel labNum = new JLabel("Номер лаборатории:");
         JLabel orderDate = new JLabel("Дата выдачи:");
         JLabel researchNum = new JLabel("Номер работы:");
-        JTextField labNumText = new JTextField("??"); // Значение номера лаборатории
-        JTextField orderDateText = new JTextField(data.Order.issueDate); // Дата выдачи
-        JTextField researchNumText = new JTextField(data.Order.researchID); // Значение номера работы
+        JTextField labNumText = new JTextField("1"); // Значение номера лаборатории
+        JTextField orderDateText = new JTextField("00/00/0000"); // Дата выдачи
+        JTextField researchNumText = new JTextField("1"); // Значение номера работы
         labNumText.setEditable(false);
         orderDateText.setEditable(false);
         researchNumText.setEditable(false);
