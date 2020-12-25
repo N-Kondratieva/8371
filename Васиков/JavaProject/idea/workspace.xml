@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07234d49-d702-4954-804c-fea1dd0a0872" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1j5sRZi5FDzsVyw1jGtfBcMuYpy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.49.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="CourseProject" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07234d49-d702-4954-804c-fea1dd0a0872" name="Default Changelist" comment="" />
+      <created>1603105283624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603105283624</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="609" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1608469477619">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="605" y="133" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1603107005845" />
+    <state x="609" y="133" key="#com.intellij.ide.util.MemberChooser/69.0.1467.864@69.0.1467.864" timestamp="1608469477619" />
+    <state x="484" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607351289368">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="484" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/69.0.1467.864@69.0.1467.864" timestamp="1607351289368" />
+    <state x="384" y="147" key="DBNavigator.DatasetFilterDialog" timestamp="1608059174166">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="384" y="147" key="DBNavigator.DatasetFilterDialog/69.0.1467.864@69.0.1467.864" timestamp="1608059174166" />
+    <state x="334" y="87" key="DBNavigator.ProjectSettingsDialog" timestamp="1608059032450">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="334" y="87" key="DBNavigator.ProjectSettingsDialog/69.0.1467.864@69.0.1467.864" timestamp="1608059032450" />
+    <state x="585" y="173" key="FileChooserDialogImpl" timestamp="1608059474246">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="580" y="173" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1603120552732" />
+    <state x="585" y="173" key="FileChooserDialogImpl/69.0.1467.864@69.0.1467.864" timestamp="1608059474246" />
+    <state width="1425" height="152" key="GridCell.Tab.0.bottom" timestamp="1608921097107">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state width="1425" height="152" key="GridCell.Tab.0.bottom/69.0.1467.864@69.0.1467.864" timestamp="1608921097107" />
+    <state width="1425" height="152" key="GridCell.Tab.0.center" timestamp="1608921097107">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state width="1425" height="152" key="GridCell.Tab.0.center/69.0.1467.864@69.0.1467.864" timestamp="1608921097107" />
+    <state width="1425" height="152" key="GridCell.Tab.0.left" timestamp="1608921097107">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state width="1425" height="152" key="GridCell.Tab.0.left/69.0.1467.864@69.0.1467.864" timestamp="1608921097107" />
+    <state width="1425" height="152" key="GridCell.Tab.0.right" timestamp="1608921097107">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state width="1425" height="152" key="GridCell.Tab.0.right/69.0.1467.864@69.0.1467.864" timestamp="1608921097107" />
+    <state x="284" y="6" key="SettingsEditor" timestamp="1608059480587">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="284" y="6" key="SettingsEditor/69.0.1467.864@69.0.1467.864" timestamp="1608059480587" />
+    <state x="240" y="52" key="new project wizard" timestamp="1603120562685">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="240" y="52" key="new project wizard/62.0.1474.864@62.0.1474.864" timestamp="1603120562685" />
+    <state x="504" y="179" key="refactoring.ChangeSignatureDialog" timestamp="1606075584594">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="504" y="179" key="refactoring.ChangeSignatureDialog/69.0.1467.864@69.0.1467.864" timestamp="1606075584594" />
+    <state x="466" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1608901058605">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="466" y="181" width="672" height="678" key="search.everywhere.popup/69.0.1467.864@69.0.1467.864" timestamp="1608901058605" />
+  </component>
+</project>
