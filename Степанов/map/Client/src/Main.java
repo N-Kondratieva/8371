@@ -1,8 +1,16 @@
 import models.*;
 
+
 public class Main {
     public static void main(String[] args) {
-        GUI app =new GUI();
+
+        JDBCPostgreSQL a = new JDBCPostgreSQL();
+        a.JDBC();
+
+        CategoriesGUI app = new CategoriesGUI();
         app.setVisible(true);
+        app.setResizable(false);
+
+
     }
 }
