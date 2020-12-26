@@ -42,18 +42,7 @@ public class MainClass{
         frame.add(panelButtons);
         frame.setVisible(true);
 
-        PreparedStatement update;
-        {
-            try {
-                update = JDBCPostgreSQL.connection.prepareStatement("SELECT stock_quantity FROM drugs");
-                ResultSet n = update.executeQuery();
-                while (n.next()) {
-                    System.out.println(n.getString(1));
-                }
-            }
-            catch(SQLException ex){
-            }
-        }
+
     }
 
 
