@@ -4,28 +4,28 @@ import java.io.File;
 
 public class Order {
     private int id;
-    private int serviceId;
-    private int employeeId;
+    private String serviceId;
+    private String employeeId;
     private String customerFIO;
     private String customerEmail;
     private int durationMaterial;
     private int cost;
-    private int inDate;
-    private int approximateDate;
+    private long inDate;
+    private long approximateDate;
     private boolean status;
-    private File inputMaterial;
+    private String inputMaterial;
 
     public Order(int id,
-                 int serviceId,
-                 int employeeId,
+                 String serviceId,
+                 String employeeId,
                  String customerFIO,
                  String customerEmail,
                  int durationMaterial,
                  int cost,
-                 int inDate,
-                 int approximateDate,
+                 long inDate,
+                 long approximateDate,
                  boolean status,
-                 File inputMaterial) {
+                 String inputMaterial) {
         this.id = id;
         this.serviceId = serviceId;
         this.employeeId = employeeId;
@@ -47,19 +47,19 @@ public class Order {
         this.id = id;
     }
 
-    public int getServiceId() {
+    public String getServiceId() {
         return serviceId;
     }
 
-    public void setServiceId(int serviceId) {
+    public void setServiceId(String serviceId) {
         this.serviceId = serviceId;
     }
 
-    public int getEmployeeId() {
+    public String getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(int employeeId) {
+    public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
 
@@ -95,7 +95,7 @@ public class Order {
         this.cost = cost;
     }
 
-    public int getInDate() {
+    public long getInDate() {
         return inDate;
     }
 
@@ -103,7 +103,7 @@ public class Order {
         this.inDate = inDate;
     }
 
-    public int getApproximateDate() {
+    public long getApproximateDate() {
         return approximateDate;
     }
 
@@ -119,11 +119,11 @@ public class Order {
         this.status = status;
     }
 
-    public File getInputMaterial() {
+    public String getInputMaterial() {
         return inputMaterial;
     }
 
-    public void setInputMaterial(File inputMaterial) {
+    public void setInputMaterial(String inputMaterial) {
         this.inputMaterial = inputMaterial;
     }
 }

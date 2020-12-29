@@ -11,13 +11,13 @@ public class Employee extends User {
     public Employee(int id,
                     String login,
                     String password,
-                    Role role,
+                    String role,
                     String fio,
                     Position position,
                     int salary,
                     String email,
                     String phoneNumber) {
-        super(id, login, password, role);
+        super(id, login, password, fio ,role);
         this.fio = fio;
         this.position = position;
         this.salary = salary;
