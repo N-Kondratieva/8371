@@ -11,12 +11,12 @@ public class UserCardGUI extends JPanel {
     public JLabel email = new JLabel("");
     public JButton info = new JButton("More info");
 
-    public UserCardGUI(User user, EventsGUI eventsGUI){
+    public UserCardGUI(User user, EventDetailGUI eventDetailGUI){
         this.setSize(900, 100);
         this.setLayout(new BorderLayout(100,0));
         Dimension dimension = new Dimension(100,100);
         this.setBorder(BorderFactory.createLineBorder(Color.black));
-        this.setBackground(new Color(0xC3FFAB));
+        this.setBackground(new Color(0xF8B667));
 
         String fullname_temp = fullname.getText();
 
@@ -32,7 +32,7 @@ public class UserCardGUI extends JPanel {
         fullname.setFont(new Font("Montserrat", Font.BOLD, 14));
 
         info.addActionListener(l -> {
-            UserInfoGUI UI = new UserInfoGUI(user, eventsGUI);
+            UserInfoGUI UI = new UserInfoGUI(user, eventDetailGUI);
             UI.setVisible(true);
             UI.setResizable(false);
         });

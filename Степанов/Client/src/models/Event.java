@@ -9,32 +9,28 @@ import db.JDBCPostgreSQL;
 
 public class Event {
     private int id;
-    public int creator_id;
+    public int creatorId;
     public String description = null;
     public String address = null;
     public int membersRequired;
-    public Date date = null;
-    public Time time = null;
+    public String date = null;
+    public String actionTitle = null;
 
     public List<User> users;
 
 
-    public Event(int id, int creator_id, String description, String address, int membersRequired, Date date, Time time) {
+    public Event(int id, int creator_id, String description, String address, int membersRequired, String date,String actionTitle) {
         this.id = id;
-        this.creator_id = creator_id;
+        this.creatorId = creator_id;
         this.description = description;
         this.address = address;
         this.membersRequired = membersRequired;
         this.date = date;
-        this.time = time;
+        this.actionTitle = actionTitle;
     }
 
     public int getId() {
         return id;
-    }
-
-    public int getCreator_id() {
-        return creator_id;
     }
 
     public String getDescription() {
@@ -49,12 +45,16 @@ public class Event {
         return membersRequired;
     }
 
-    public Date getDate() {
-        return date;
+    public int getCreatorId() {
+        return creatorId;
     }
 
-    public Time getTime() {
-        return time;
+    public String getActionTitle() {
+        return actionTitle;
+    }
+
+    public String getDate() {
+        return date;
     }
 
     public List<User> getUsers() {

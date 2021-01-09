@@ -16,7 +16,7 @@ public class EventCardGUI extends JPanel {
         this.setLayout(new BorderLayout(100,0));
         Dimension dimension = new Dimension(100,100);
         this.setBorder(BorderFactory.createLineBorder(Color.black));
-        this.setBackground(new Color(0xECCE78));
+        this.setBackground(new Color(0xFFD874));
 
         String members_temp = members.getText();
 
@@ -25,9 +25,7 @@ public class EventCardGUI extends JPanel {
 
         members.setMinimumSize(dimension);
         description.setSize(dimension);
-        description.setAlignmentX(JButton.CENTER_ALIGNMENT);
         description.setFont(new Font("Montserrat", Font.BOLD, 14));
-        members.setAlignmentX(JButton.CENTER_ALIGNMENT);
         members.setFont(new Font("Montserrat", Font.BOLD, 14));
 
         info.addActionListener(l -> {

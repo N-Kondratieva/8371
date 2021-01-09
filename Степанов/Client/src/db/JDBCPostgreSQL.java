@@ -13,6 +13,8 @@ public class JDBCPostgreSQL {
     static final String PASS = "admin";
     public static Connection connection = null;
 
+    public static User current_user;
+
     public static void JDBC() {
 
         System.out.println("Testing connection to PostgreSQL JDBC");
@@ -64,6 +66,21 @@ public class JDBCPostgreSQL {
         return actions;
     }
 
+
+    public void createEvent(int creator_id, String description, String address, int membersRequired, String date, String action_title){
+        String insert = "INSERT INTO public.events (creator_id, description, address, members_required, date, action_title) VALUES" +
+                "('" + creator_id + "','" + description + "','" + address + "','" + membersRequired + "','" + date + "','" + action_title + "')";
+        try {
+            Statement statement = null;
+            statement = connection.createStatement();
+            statement.executeUpdate(insert);
+            System.out.println("Event created");
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
     public ArrayList<Event> getEvents(String actionTitle) {
         ArrayList<Event> events = new ArrayList<Event>();
         PreparedStatement statement = null;
@@ -79,8 +96,8 @@ public class JDBCPostgreSQL {
                         result.getString(3),
                         result.getString(4),
                         result.getInt(5),
-                        result.getDate(6),
-                        result.getTime(7));
+                        result.getString(6),
+                        result.getString(7));
                 events.add(buffEvent);
 
             }
@@ -108,16 +125,55 @@ public class JDBCPostgreSQL {
                         result.getString(4),
                         result.getString(5),
                         result.getString(6),
-                        result.getDate(7),
+                        result.getString(7),
                         result.getString(8)));
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        System.out.println(users.get(1).firstName);
         return users;
     }
 
+    public User getUser(String email, String password) {
+        PreparedStatement statement = null;
+        ResultSet result = null;
+
+        try {
+            statement = connection.prepareStatement("SELECT * FROM public.users WHERE password = '" + password + "' and email = '" + email + "'");
+            result = statement.executeQuery();
+
+            while (result.next()) {
+                User user = new User(result.getInt(1),
+                        result.getString(2),
+                        result.getString(3),
+                        result.getString(4),
+                        result.getString(5),
+                        result.getString(6),
+                        result.getString(7),
+                        result.getString(8));
+                current_user = user;
+                return user;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null;
+    }
+
+    public void createUser(String firstName, String lastName, String email, String password, String
+            phoneNumber, String birthDate, String aboutMe) {
+        String insert = "INSERT INTO public.users (first_name,last_name,email, password, phone_number, birth_date," +
+                " about_me) VALUES ('" + firstName + "','" + lastName + "','" + email + "','" + password + "','" + phoneNumber + "','" + birthDate + "','" + aboutMe + "')";
+        try {
+            Statement statement = null;
+            statement = connection.createStatement();
+            statement.executeUpdate(insert);
+            System.out.println("User created");
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
     public void AddEventsUsersRelation(int event_id, int user_id) {
         String insert = "INSERT INTO public.events_users (event_id,user_id) VALUES ('" + event_id + "','" + user_id + "')";
         try {

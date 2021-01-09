@@ -12,9 +12,9 @@ public class User {
     public String password;
     public String phoneNumber;
     public String aboutMe;
-    public Date birthDate;
+    public String birthDate;
 
-    public User(int id, String firstName, String lastName, String email, String password, String phoneNumber,  Date birthDate, String aboutMe) {
+    public User(int id, String firstName, String lastName, String email, String password, String phoneNumber,  String birthDate, String aboutMe) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -49,7 +49,7 @@ public class User {
         return aboutMe;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 

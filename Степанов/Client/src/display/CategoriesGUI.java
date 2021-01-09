@@ -19,7 +19,6 @@ public class CategoriesGUI extends JFrame {
     public CategoriesGUI() {
         super("Categories");
         this.setBounds(800, 100, 1000, 1000);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         categoriesTitle[0] = new JLabel("SPORT", JLabel.CENTER);
         categoriesTitle[1] = new JLabel("MUSIC", JLabel.CENTER);
@@ -57,12 +56,12 @@ public class CategoriesGUI extends JFrame {
 
         Title.setSize(1000,30);
         Title.setFont(new Font("Montserrat", Font.BOLD, 25));
+        Title.setHorizontalAlignment(JLabel.CENTER);
+        Title.setVerticalAlignment(JLabel.CENTER);
         container.add(Title, BorderLayout.NORTH);
         container.add(LabelEast, BorderLayout.EAST);
         container.add(LabelSouth, BorderLayout.SOUTH);
         container.add(LabelWest, BorderLayout.WEST);
-        Title.setHorizontalAlignment(JLabel.CENTER);
-        Title.setVerticalAlignment(JLabel.CENTER);
 
     }
 

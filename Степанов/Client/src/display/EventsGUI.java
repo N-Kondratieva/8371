@@ -15,6 +15,13 @@ public class EventsGUI extends JDialog {
     private JLabel LabelEast = new JLabel("");
 
     private JPanel eventsPanel = new JPanel(new GridLayout(10, 1, 10, 10));
+    private JPanel contentPanel = new JPanel(new FlowLayout());
+
+    private JPanel newEventPanel = new JPanel(new BorderLayout(100,0));
+    private JLabel newEventLabel1 = new JLabel("");
+    private JLabel newEventLabel2 = new JLabel("");
+    private JButton newEventButton = new JButton();
+    private JLabel newEventLabel = new JLabel("+ New event");
 
     public EventsGUI(String action, ActionsGUI actionsGUI) {
         super(actionsGUI, "Events", true);
@@ -40,6 +47,21 @@ public class EventsGUI extends JDialog {
                 eventsPanel.add(event);
             }
         }
+
+        newEventLabel.setFont(new Font("Montserrat", Font.BOLD, 20));
+        newEventButton.add(newEventLabel);
+        newEventButton.addActionListener(l -> {
+            NewEventGUI NE = new NewEventGUI(this,action);
+            NE.setVisible(true);
+            NE.setResizable(false);
+
+        });
+
+        newEventPanel.add(newEventLabel1, BorderLayout.WEST);
+        newEventPanel.add(newEventLabel2, BorderLayout.CENTER);
+        newEventPanel.add(newEventButton, BorderLayout.EAST);
+
+        eventsPanel.add(newEventPanel);
 
         container.add(eventsPanel, BorderLayout.CENTER);
         container.add(Title, BorderLayout.NORTH);
